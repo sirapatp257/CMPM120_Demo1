@@ -6,6 +6,17 @@ class Setup extends Phaser.Scene {
    preload() {
       this.load.path = "./assets/";
       this.load.image("mouse", "images/MouseIcon.png");
+      this.load.image("gemstone", "images/Gemstone.png");
+      this.load.image("halo", "images/LogoHalo.png");
+      this.load.image("studioSign", "images/DivineGemstoneLogoText.png");
+      this.load.audio("hum", "sounds/hum-edited.wav");
+      this.load.image("dayBG", "images/DayBackground.png");
+      this.load.image("student", "images/Sharkman_Citizen.png");
+      this.load.image("nightBG", "images/NightBackground.png");
+      this.load.image("vigilante", "images/Sharkman_Hero.png");
+      this.load.image("mainMenuBG", "images/MainMenuBackground.png");
+      this.load.image("titleText", "images/GameTitleText.png");
+      this.load.audio("bgm", "sounds/SharkmanAnthem.wav");
    }
 
    create() {
@@ -47,14 +58,6 @@ class Setup extends Phaser.Scene {
 class Splash extends Phaser.Scene {
    constructor() {
       super('splash');
-   }
-
-   preload() {
-      this.load.path = "./assets/";
-      this.load.image("gemstone", "images/Gemstone.png");
-      this.load.image("halo", "images/LogoHalo.png");
-      this.load.image("studioSign", "images/DivineGemstoneLogoText.png");
-      this.load.audio("hum", "sounds/hum-edited.wav");
    }
 
    create() {
@@ -113,12 +116,6 @@ class Student extends Phaser.Scene {
       super('student');
    }
 
-   preload() {
-      this.load.path = "./assets/";
-      this.load.image("dayBG", "images/DayBackground.png");
-      this.load.image("student", "images/Sharkman_Citizen.png");
-   }
-
    create() {
       this.add.image(320, 240, "dayBG");
       this.add.image(320, 240, "student");
@@ -162,12 +159,6 @@ class Student extends Phaser.Scene {
 class Vigilante extends Phaser.Scene {
    constructor() {
       super('vigilante');
-   }
-
-   preload() {
-      this.load.path = "./assets/";
-      this.load.image("nightBG", "images/NightBackground.png");
-      this.load.image("vigilante", "images/Sharkman_Hero.png");
    }
 
    create() {
@@ -283,14 +274,6 @@ class Poem extends Phaser.Scene {
 class MainMenu extends Phaser.Scene {
    constructor() {
       super('mainMenu');
-   }
-
-   preload() {
-      this.load.path = "./assets/";
-      this.load.image("mainMenuBG", "images/MainMenuBackground.png");
-      this.load.image("titleText", "images/GameTitleText.png");
-      this.load.image("mouse", "images/MouseIcon.png");
-      this.load.audio("bgm", "sounds/SharkmanAnthem.wav");
    }
 
    create() {
@@ -434,11 +417,6 @@ class Exposition extends Phaser.Scene {
 class GameStart extends Phaser.Scene {
    constructor() {
       super('gameStart');
-   }
-
-   preload() {
-      this.load.path = "./assets/";
-      this.load.image("nightBG", "images/NightBackground.png");
    }
 
    create() {

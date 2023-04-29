@@ -41,7 +41,7 @@ The background music for the main menu was made using Bosca Ceoil.
   - spotlightCone in Splash scene (triangle)
   - textbox in Student scene (rectangle)
   - textbox in Vigilante scene (rectangle)
-  - rectangle in Exposition scene to help make it look like the background is fading away in the wipe along with the text.
+  - rectangle in Exposition scene to help make it look like the background is being wiped away along with the text.
 
 * 1+ logotype text:
   - DivineGemstoneLogoText.png in Splash
