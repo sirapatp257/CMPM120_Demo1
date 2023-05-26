@@ -1,7 +1,11 @@
 let config = {
    type: Phaser.WEBGL,
-   width: 640,
-   height: 480,
+   scale: {
+      mode: Phaser.Scale.FIT,
+      autoCenter: Phaser.Scale.CENTER_BOTH,
+      width: 1920,
+      height: 1080
+   },
    backgroundColor: 0,
    scene: [Setup, Splash, Student, Vigilante, Poem, MainMenu, Exposition, GameStart, Outro]
 }
